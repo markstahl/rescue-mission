@@ -13,3 +13,206 @@
  *= require_tree .
  *= require_self
  */
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Candal);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Monoton);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700,900);
+
+ .questions {
+   position: relative;
+   font-family: 'Permanent Marker', cursive;
+   font-variant:small-caps;
+   font-size: 100px;
+   -webkit-transform: skew(-7deg,-7deg);
+   padding-left: 80px;
+   background-image: -webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-left: 225px;
+   margin-top: -23px;
+   -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+ }
+
+ .questions:before {
+   content: '_______';
+   position: absolute;
+   bottom: -35px;
+   left: 135px;
+   background-image: -webkit-linear-gradient(#F3C8F3 0%, #F3C8F3 100%);
+   -webkit-background-clip: text;
+   text-shadow: 70px -7px #F3C8F3;
+ }
+
+ .questions-q {
+   position: relative;
+   background-image: -webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+   -webkit-background-clip: text;
+   padding-right: 18px;
+   margin-right: -18px;
+ }
+
+ li {
+   font-family: 'Permanent Marker', cursive;
+   font-variant:small-caps;
+   font-size: 32px;
+   -webkit-transform: skew(0deg, 0deg);
+   padding-left: 80px;
+   word-wrap: break-word;
+   background-image: -webkit-linear-gradient(#FF0FE2 0%,  #F9F9F1 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-left: 200px;
+   margin-top: 10px;
+   -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+ }
+
+ body {
+  background-image: url('https://steamuserimages-a.akamaihd.net/ugc/270598716228006143/7C0161535556DCCE3A2A81E9A94539FF5D41FBBC/');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+ }
+
+ .ask {
+   position: absolute;
+   left: 65px;
+   bottom: 45px;
+   font-family: 'Mr Dafoe', cursive;
+   font-size: 52px;
+   transform:rotate(-15deg);
+   -ms-transform:rotate(-15deg); /* IE 9 */
+   -webkit-transform:rotate(-1deg); /* Safari and Chrome */
+   margin: 0;
+   margin-top: -160px;
+   padding-left: 430px;
+   text-shadow: 1px 2px 0px black;
+ }
+
+ .ask a {
+   color: white;
+ }
+
+ .back-button a {
+   font-family: 'Permanent Marker', cursive;
+   font-variant:small-caps;
+   font-size: 32px;
+   -webkit-transform: skew(0deg, 0deg);
+   background-image: -webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+   bottom: -600px;
+   margin-left: 575px;
+ }
+
+ .new-q {
+   position: relative;
+   font-family: 'Permanent Marker', cursive;
+   font-variant:small-caps;
+   font-size: 100px;
+   -webkit-transform: skew(-5deg,-5deg);
+   padding-left: 80px;
+   background-image: -webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-left: 280px;
+   margin-top: -20px;
+   -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+ }
+
+ .new-q:before {
+   content: '______';
+   position: absolute;
+   bottom: -35px;
+   left: 135px;
+   background-image: -webkit-linear-gradient(#F3C8F3 0%, #F3C8F3 100%);
+   -webkit-background-clip: text;
+   text-shadow: 70px -7px #F3C8F3;
+ }
+
+ .field {
+   color: white;
+   font-family: 'Righteous';
+   text-align: center;
+   margin-top: 60px;
+ }
+
+ .error {
+   text-align: center;
+   color: white;
+   font-family: 'Righteous';
+ }
+
+ .wrapper {
+   font-family: 'Permanent Marker', cursive;
+   font-variant:small-caps;
+   font-size: 28px;
+   background-image: -webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+   text-align: center;
+ }
+
+ .q-- {
+   font-family: 'Permanent Marker', cursive;
+   font-variant:small-caps;
+   font-size: 28px;
+   background-image: -webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+   text-align: center;
+ }
+
+.a-- {
+  font-family: 'Permanent Marker', cursive;
+  font-variant:small-caps;
+  font-size: 16px;
+  background-image: -webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+  text-align: center;
+}
+
+.edit-delete a {
+  margin-left: 320px;
+  margin-top: 18px;
+  display: inline-block;
+ font-family: 'Candal';
+ color: white;
+}
+
+.back-page a  {
+ font-family: 'Permanent Marker', cursive;
+ font-variant:small-caps;
+ font-size: 32px;
+ -webkit-transform: skew(0deg, 0deg);
+ background-image: -webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+ bottom: -600px;
+ margin-left: 550px;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 7px;
+}
+
+.-answers {
+  font-family: 'Permanent Marker', cursive;
+  font-variant:small-caps;
+  font-size: 16px;
+  background-image: -webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+  text-align: center;
+  }

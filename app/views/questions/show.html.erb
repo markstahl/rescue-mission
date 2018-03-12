@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<div class="q--">
+<h1><%= @question.title %></h1>
+</div>
+<div class="a--">
+<p><%= @question.description %></p>
+</div>
+
+<div class="edit-delete">
+  <%= link_to 'Edit Question', edit_question_path(@question) %>
+  <%= link_to 'Delete Article', question_path(@question), method: :delete, data: {confirm: 'Are you sure?'} %>
+</div>
+
+<% if @errors != [] %>
+  <ul class="error">
+    <% @errors.each do |error| %>
+      <h3><%= error %></h3>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for [@question, @answer] do |f| %>
+  <div class="field">
+    <%= f.label :Answer_the_Question %><br />
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<div class="wrapper">
+<h1>Answers</h1>
+<ul id="answers-list">
+  <% @answers.each do |answer| %>
+    <li class="-answers">
+        <%= answer.description %>
+    </li>
+  <% end %>
+</ul>
+</div>
+
+<div class="back-page"><%= link_to 'Back', questions_path %></div>

@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="questions"><span class="questions-q">R</span>escue Mission</h1>
+<ul id="questions-list">
+  <% @questions.each do |question| %>
+    <li>
+        <h3><%= link_to question.title, question %></h3>
+    </li>
+  <% end %>
+</ul>
+<h3 class='ask'><%= link_to 'Ask a Question', new_question_path %><h3>
